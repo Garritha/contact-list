@@ -26,6 +26,14 @@ function imprimirContactos() {
     console.log(listaDeContactos[i]);
   }
 };
+// Función para actualizar un contacto existente en la lista
+function actualizarContacto(nombreApellido, nuevoNombreApellido) {
+  var indice = listaDeContactos.indexOf(nombreApellido);
+  if (indice !== -1) {
+    listaDeContactos[indice] = nuevoNombreApellido;
+  }
+};
+
 console.log("Contactos actuales:");
 // imprimirContactos();
 
